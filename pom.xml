@@ -9,11 +9,11 @@
 	<version>1.0</version>
 	<name>ats-common</name>
 	<description>Demo project for Spring Boot</description>
-	
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>8</java.version>
-		<maven.compiler.source>${java.version}</maven.compiler.source> 
+		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
 	<dependencies>
@@ -22,9 +22,13 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.11</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.11.4</version>
+		</dependency>
 	</dependencies>
-<build>
+	<build>
 		<pluginManagement>
 			<!-- lock down plugins versions to avoid using Maven defaults (may be 
 				moved to parent pom) -->

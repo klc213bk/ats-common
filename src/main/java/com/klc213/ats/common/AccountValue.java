@@ -7,6 +7,14 @@ public class AccountValue {
 	private BigDecimal value;
 	private CurrencyEnum currency;
 	
+	public AccountValue() { }
+	
+	public AccountValue(String key, BigDecimal value, CurrencyEnum currency) {
+		this.key = key;
+		this.value = value;
+		this.currency = currency;
+	}
+	
 	public String getKey() {
 		return key;
 	}

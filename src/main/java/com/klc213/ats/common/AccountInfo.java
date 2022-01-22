@@ -7,7 +7,7 @@ public class AccountInfo {
 	private String accountCode;
 	private Set<AccountValue> accountValueSet;
 	private Set<Portfolio> portfolioSet;
-	private LocalDateTime accountTime;
+	private Long accountTime;
 	
 	public String getAccountCode() {
 		return accountCode;
@@ -21,10 +21,10 @@ public class AccountInfo {
 	public void setAccountValueSet(Set<AccountValue> accountValueSet) {
 		this.accountValueSet = accountValueSet;
 	}
-	public LocalDateTime getAccountTime() {
+	public Long getAccountTime() {
 		return accountTime;
 	}
-	public void setAccountTime(LocalDateTime accountTime) {
+	public void setAccountTime(Long accountTime) {
 		this.accountTime = accountTime;
 	}
 	public Set<Portfolio> getPortfolioSet() {
