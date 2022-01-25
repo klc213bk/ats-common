@@ -1,6 +1,5 @@
 package com.klc213.ats.common;
 
-import java.time.LocalDateTime;
 import java.util.Set;
 
 public class AccountInfo {

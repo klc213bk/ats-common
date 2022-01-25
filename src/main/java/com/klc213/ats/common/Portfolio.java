@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Portfolio {
 	private String accountCode;
 	private Contract contract;
-	private Long position;
+	private BigDecimal position;
 	private BigDecimal mktPrice;
 	private BigDecimal mktValue;
 	private BigDecimal avgCost;
@@ -22,10 +22,10 @@ public class Portfolio {
 	public void setContract(Contract contract) {
 		this.contract = contract;
 	}
-	public Long getPosition() {
+	public BigDecimal getPosition() {
 		return position;
 	}
-	public void setPosition(Long position) {
+	public void setPosition(BigDecimal position) {
 		this.position = position;
 	}
 	public BigDecimal getMktPrice() {
