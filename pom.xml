@@ -8,8 +8,7 @@
 	<packaging>jar</packaging>
 	<version>1.0</version>
 	<name>ats-common</name>
-	<description>Demo project for Spring Boot</description>
-
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>8</java.version>
