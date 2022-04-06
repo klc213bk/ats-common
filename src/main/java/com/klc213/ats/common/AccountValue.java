@@ -4,12 +4,12 @@ import java.math.BigDecimal;
 
 public class AccountValue {
 	private String key;
-	private BigDecimal value;
-	private CurrencyEnum currency;
+	private String value;
+	private String currency;
 	
 	public AccountValue() { }
 	
-	public AccountValue(String key, BigDecimal value, CurrencyEnum currency) {
+	public AccountValue(String key, String value, String currency) {
 		this.key = key;
 		this.value = value;
 		this.currency = currency;
@@ -21,16 +21,16 @@ public class AccountValue {
 	public void setKey(String key) {
 		this.key = key;
 	}
-	public BigDecimal getValue() {
+	public String getValue() {
 		return value;
 	}
-	public void setValue(BigDecimal value) {
+	public void setValue(String value) {
 		this.value = value;
 	}
-	public CurrencyEnum getCurrency() {
+	public String getCurrency() {
 		return currency;
 	}
-	public void setCurrency(CurrencyEnum currency) {
+	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 	

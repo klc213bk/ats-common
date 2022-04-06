@@ -2,7 +2,7 @@ package com.klc213.ats.common;
 
 public class Contract {
 	private String symbol;
-	private CurrencyEnum  currency;
+	private String  currency;
 
 	public String getSymbol() {
 		return symbol;
@@ -12,11 +12,11 @@ public class Contract {
 		this.symbol = symbol;
 	}
 
-	public CurrencyEnum getCurrency() {
+	public String getCurrency() {
 		return currency;
 	}
 
-	public void setCurrency(CurrencyEnum currency) {
+	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 	
