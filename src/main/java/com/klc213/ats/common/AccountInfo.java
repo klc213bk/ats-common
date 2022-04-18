@@ -1,37 +1,38 @@
 package com.klc213.ats.common;
 
+import java.util.Map;
 import java.util.Set;
 
 public class AccountInfo {
-	private String accountCode;
-	private Set<AccountValue> accountValueSet;
-	private Set<Portfolio> portfolioSet;
-	private Long accountTime;
+	private String accountNo;
+	private Map<String, AccountValue> accountValueMap;
+	private Map<Contract, Portfolio> portfolioMap;
+	private String accountTime;
 	
-	public String getAccountCode() {
-		return accountCode;
+	public String getAccountNo() {
+		return accountNo;
 	}
-	public void setAccountCode(String accountCode) {
-		this.accountCode = accountCode;
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
 	}
-	public Set<AccountValue> getAccountValueSet() {
-		return accountValueSet;
-	}
-	public void setAccountValueSet(Set<AccountValue> accountValueSet) {
-		this.accountValueSet = accountValueSet;
-	}
-	public Long getAccountTime() {
+	
+	public String getAccountTime() {
 		return accountTime;
 	}
-	public void setAccountTime(Long accountTime) {
+	public void setAccountTime(String accountTime) {
 		this.accountTime = accountTime;
 	}
-	public Set<Portfolio> getPortfolioSet() {
-		return portfolioSet;
+	public Map<String, AccountValue> getAccountValueMap() {
+		return accountValueMap;
 	}
-	public void setPortfolioSet(Set<Portfolio> portfolioSet) {
-		this.portfolioSet = portfolioSet;
+	public void setAccountValueMap(Map<String, AccountValue> accountValueMap) {
+		this.accountValueMap = accountValueMap;
 	}
-	
+	public Map<Contract, Portfolio> getPortfolioMap() {
+		return portfolioMap;
+	}
+	public void setPortfolioMap(Map<Contract, Portfolio> portfolioMap) {
+		this.portfolioMap = portfolioMap;
+	}
 	
 }

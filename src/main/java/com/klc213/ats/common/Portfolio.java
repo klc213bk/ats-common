@@ -3,18 +3,18 @@ package com.klc213.ats.common;
 import java.math.BigDecimal;
 
 public class Portfolio {
-	private String accountCode;
+	private String accountNo;
 	private Contract contract;
 	private BigDecimal position;
 	private BigDecimal mktPrice;
 	private BigDecimal mktValue;
 	private BigDecimal avgCost;
 	
-	public String getAccountCode() {
-		return accountCode;
+	public String getAccountNo() {
+		return accountNo;
 	}
-	public void setAccountCode(String accountCode) {
-		this.accountCode = accountCode;
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
 	}
 	public Contract getContract() {
 		return contract;
