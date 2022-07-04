@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <localRepository>C:\software\maven-repo</localRepository>
+
+
+
+  <profiles>
+	<profile>
+      <id>tgl-scan-repo</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+          <downloadSources>true</downloadSources>
+          <downloadJavadocs>true</downloadJavadocs>
+      </properties>
+      <repositories>
+        <repository>
+          <snapshots />
+          <id>tgl-scan-repo</id>
+          <name>eBaoTech Maven Repository</name>
+          <!--<url>https://repo1.maven.org/maven2</url>-->
+		  
+          <url>http://10.67.67.111:8081/artifactory/ebao-maven-repo</url>
+			
+		</repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots />
+          <id>tgl-scan-repo</id>
+          <name>eBaoTech Maven Repository</name>
+          <!--<url>https://repo1.maven.org/maven2</url>-->
+          
+		  <url>http://10.67.67.111:8081/artifactory/ebao-maven-repo</url>
+		  
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+
+</settings>
